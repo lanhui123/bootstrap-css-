@@ -1,0 +1,70 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family:Tahoma,sans-serif;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+body .active-preloader-ovh {
+    overflow: hidden;
+}
+.preloader{
+    background-color: #F9B;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.preloader .spinner {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    background-color: #171717;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+
+/*
+.carousel-bg {
+    background: url("../img/aisi.jpg")no-repeat 0px 0px;
+    background-position: right bottom;
+}
+*/
+
+/*
+.carousel-bg-1{
+    background: url("../img/lufei.jpg")no-repeat 0px 0px;
+    background-position: right bottom;
+}
+*/
+.second {
+    background: #f7f7f7;
+
+}
+
+.borderrepeat {
+    border: 1px solid coral;
+/*margin-left: -10px;*/
+}
+.textcarousel{
+    display: block;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 100px;
+    font-family: DaunPenh;
+}
