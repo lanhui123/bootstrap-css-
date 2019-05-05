@@ -1,10 +1,11 @@
-html{
+html {
     margin: 0;
     padding: 0;
-    font-family:Tahoma,sans-serif;
+    font-family: Tahoma, sans-serif;
 
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     background: #ffffff;
@@ -13,7 +14,8 @@ body{
 body .active-preloader-ovh {
     overflow: hidden;
 }
-.preloader{
+
+.preloader {
     background-color: #F9B;
     height: 100%;
     left: 0;
@@ -37,7 +39,6 @@ body .active-preloader-ovh {
     animation: sk-scaleout 1.0s infinite ease-in-out;
 }
 
-
 /*
 .carousel-bg {
     background: url("../img/aisi.jpg")no-repeat 0px 0px;
@@ -51,20 +52,209 @@ body .active-preloader-ovh {
     background-position: right bottom;
 }
 */
-.second {
-    background: #f7f7f7;
 
-}
 
 .borderrepeat {
     border: 1px solid coral;
-/*margin-left: -10px;*/
+    /*margin-left: -10px;*/
 }
-.textcarousel{
+
+.textcarousel {
     display: block;
     position: relative;
     margin-top: 0;
-    padding-top: 0;
     margin-bottom: 100px;
+    padding: 92px 0;
     font-family: DaunPenh;
+}
+
+.textcarousel h3 {
+    font-family: Verdana;
+    font-size: 3.5rem;
+    color: #1b1e21;
+}
+
+.textcarousel p {
+    font-family: Arial;
+    font-size: 2rem;
+    color: #1d2124;
+}
+
+.carousel-bg:nth-child(3) h3 {
+    color: #dc5e5ea6;
+}
+
+.carousel-bg:nth-child(3) p {
+    color: #dc5e5ea6;
+}
+
+.carousel-bg img {
+    max-width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.carousel-bg:nth-child(2) h3 {
+    font-family: Verdana;
+    color: #568188;
+    font-size: 3rem;
+}
+
+.navfont {
+    font-size: 1.5rem;
+
+}
+
+.navfa a {
+    color: red;
+}
+
+#navbarContent:nth-child(6) {
+    margin-right: 0;
+}
+
+.aflag a {
+    color: red;
+}
+
+/*
+.ulli li a{
+    color: #d8e4dbc4;
+}*/
+.navbar-dark .navbar-nav .nav-link {
+    color: #d0c2c2;
+!important;
+}
+
+.bgnews {
+    background-color: #f6f5f1;
+}
+
+#news,#about,#navtabs,#ourteam{
+    padding: 50px 0;
+}
+
+.titlefind h2 {
+    font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 0 13px;
+
+}
+
+.titlefind p {
+    margin: 0 119px;
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+.titlefind hr {
+    height: 0px;
+    width: 10%;
+    border: 3px solid #ca2121;
+}
+
+.fever h2 {
+    font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
+    font-size: 3rem;
+}
+
+.fever img {
+    margin-top: 15px;
+    width: 100%;
+    height: 416px;
+    margin-bottom: 15px;
+}
+
+.fever p {
+    font-family: Arial;
+    font-size: 1.2rem;
+    text-indent: 32px;
+    float: left;
+}
+
+.godsecond{
+    transition: 0.3s;
+}
+.godsecond a {
+    /*color: #b98477;*/
+    font-size: 1.3rem;
+    float: right;
+}
+.godsecond  a{
+    transform: translate(-50px);
+}
+.godsecond a:hover{
+transition: 1s;
+    transform: translate(0px);
+}
+.godsecond a:focus{
+
+}
+.bgabout{
+    background-color: #ad9d9d;
+}
+.bgabout h4{
+    margin-top: 15px;
+    font-size: 1.8rem;
+}
+/*
+.right1{
+padding-right: 50px;
+}*/
+.bgabout img{
+    margin-top: 30px;
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 6px 3px rgba(37, 66, 37, 0.5);
+}
+
+.bgnavtabs {
+    background-color: #f6f5f1;
+    font-family: Arial;
+}
+.bgnavtabs li a{
+    color: #ef0808;
+    font-size: 1.2rem;
+}
+.bgnavtabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #0e86f1;
+    background-color: #e0cccc;
+
+}
+
+.bgnavtabs p{
+    vertical-align: middle;!important;
+    padding:32px 15px 0 0;
+    text-indent: 2rem;
+    font-size: 1.1rem;
+}
+.bgnavtabs img{
+    box-shadow: 1px 2px 2px 0 #524a4a;
+}
+#second img{
+    margin-top: 15px;
+}
+#four img{
+    margin-top: 40px;
+}
+.findteam h2{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: #171717;
+
+}
+.findteam p{
+    color: #707070;
+    font-size: 18px;
+    margin: 0;
+}
+.teamchild{
+    margin-top: 20px;
+}
+.teamchild img{
+    max-width: 100%;
+    height: auto;
 }
