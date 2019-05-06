@@ -53,12 +53,6 @@ body .active-preloader-ovh {
 }
 */
 
-
-.borderrepeat {
-    border: 1px solid coral;
-    /*margin-left: -10px;*/
-}
-
 .textcarousel {
     display: block;
     position: relative;
@@ -101,7 +95,7 @@ body .active-preloader-ovh {
 }
 
 .navfont {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
 }
 
@@ -114,7 +108,41 @@ body .active-preloader-ovh {
 }
 
 .aflag a {
-    color: red;
+    color: #ffffff;
+}
+
+.block-menu {
+    background-image: linear-gradient(to right, #e84d53 0%, #ecfa9a 51%, #e8293a 100%);
+    border-radius: 30px;
+    background-size: 200% auto;
+    border-style: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 6px 22px !important;
+    transition: 0.5s;
+    text-transform: capitalize;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.ulli li:nth-child(1) {
+    font-weight: bold;
+}
+
+.ulli li:nth-child(6) {
+    margin-left: 100px;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    color: #cc2222;
+!important;
+}
+
+.navbar-dark.navbar-nav.active {
+    color: #34ce57;
 }
 
 /*
@@ -122,15 +150,20 @@ body .active-preloader-ovh {
     color: #d8e4dbc4;
 }*/
 .navbar-dark .navbar-nav .nav-link {
-    color: #d0c2c2;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+    color: #ffffff;
 !important;
+}
+
+.navbar-dark.navbar-nav > a:hover {
+    color: #34ce57;
 }
 
 .bgnews {
     background-color: #f6f5f1;
 }
 
-#news,#about,#navtabs,#ourteam{
+#news, #about, #navtabs, #ourteam, #download {
     padding: 50px 0;
 }
 
@@ -174,36 +207,43 @@ body .active-preloader-ovh {
     float: left;
 }
 
-.godsecond{
+.godsecond {
     transition: 0.3s;
 }
+
 .godsecond a {
     /*color: #b98477;*/
     font-size: 1.3rem;
     float: right;
 }
-.godsecond  a{
+
+.godsecond a {
     transform: translate(-50px);
 }
-.godsecond a:hover{
-transition: 1s;
+
+.godsecond a:hover {
+    transition: 1s;
     transform: translate(0px);
 }
-.godsecond a:focus{
+
+.godsecond a:focus {
 
 }
-.bgabout{
+
+.bgabout {
     background-color: #ad9d9d;
 }
-.bgabout h4{
+
+.bgabout h4 {
     margin-top: 15px;
     font-size: 1.8rem;
 }
+
 /*
 .right1{
 padding-right: 50px;
 }*/
-.bgabout img{
+.bgabout img {
     margin-top: 30px;
     max-width: 100%;
     border-radius: 25px;
@@ -214,47 +254,237 @@ padding-right: 50px;
     background-color: #f6f5f1;
     font-family: Arial;
 }
-.bgnavtabs li a{
+
+.bgnavtabs li a {
     color: #ef0808;
     font-size: 1.2rem;
 }
-.bgnavtabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+
+.bgnavtabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #0e86f1;
     background-color: #e0cccc;
 
 }
 
-.bgnavtabs p{
-    vertical-align: middle;!important;
-    padding:32px 15px 0 0;
+.bgnavtabs p {
+    vertical-align: middle;
+!important;
+    padding: 32px 15px 0 0;
     text-indent: 2rem;
     font-size: 1.1rem;
 }
-.bgnavtabs img{
+
+.bgnavtabs img {
     box-shadow: 1px 2px 2px 0 #524a4a;
 }
-#second img{
+
+#second img {
     margin-top: 15px;
 }
-#four img{
+
+#four img {
     margin-top: 40px;
 }
-.findteam h2{
+
+.findteam h2 {
     margin: 0;
     font-size: 40px;
     font-weight: 600;
     color: #171717;
 
 }
-.findteam p{
+
+.findteam p {
     color: #707070;
     font-size: 18px;
     margin: 0;
 }
-.teamchild{
+
+.hr {
+    background: #00bcd4 none repeat scroll 0 0;
+    border-radius: 2px;
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin: 20px auto;
+}
+
+.teamchild {
+    margin: 20px 200px 0 200px;
+}
+
+@media screen and (max-width: 500px) {
+    .teamchild {
+        margin: 0;
+    }
+
+    .bgchange {
+        background-color: #34ce57;
+    }
+}
+
+.teamchild img {
+    width: 100%;
+
+}
+
+/*
+.findteam .card-header{
+    opacity: 0;!important;
+}*/
+.findteam .card-body {
+    padding: 0;
+}
+
+.teamchild .card {
+    margin: 15px;
+    box-shadow: 0px 2px 2px 0px #1d2124;
+}
+
+.teamchild span {
+    color: red;
+    font-size: 1rem;
+}
+
+.teamchild i {
+    color: red;
+}
+
+.teamchild .card-text {
+    color: #1d2124;
+    font-size: 16px;
+}
+
+.bgchange {
+    background-color: #d4abafb8;
+}
+
+.padder {
+    padding: 5px 15px 5px 15px;
+}
+
+.download {
+    background-image: linear-gradient(45deg, #292524 25%, #332e2d 50%, #292524 75%);
+}
+
+.download h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.download p {
+    margin-bottom: 30px;
+    text-indent: 2rem;
+    color: white;
+}
+
+.vtime {
+    margin-top: 50px;
+}
+
+.vtime button {
+    background: #c9c6d8;
+}
+
+#footcontent {
+    padding-top: 50px;
+    background: #252121;
+    color: #f7f7f7;
+}
+
+.footertop {
+    color: #f7f7f7;
+    margin-top: 30px;
+}
+
+.borderrepeat {
+    border: 1px solid coral;
+    /*margin-left: -10px;*/
+}
+
+.borderrepeat p {
+    /*margin: auto 3px ;*/
+    margin: 8px 2px 8px 18px;
+}
+
+.footertop ul {
     margin-top: 20px;
 }
-.teamchild img{
-    max-width: 100%;
-    height: auto;
+
+.footertop ul li {
+    list-style: none;
+}
+
+.footertop ul li a {
+    color: #f7f7f7;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footertop ul li a:hover {
+    color: #17a2b8;
+}
+
+.copys {
+    margin-top: 20px;
+}
+
+.copys .breadcrumb {
+    background: #b36e6e;
+!important;
+}
+
+.copys .breadcrumb-item + .breadcrumb-item::before {
+    color: #351d16;
+}
+
+.copys ol li a {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .textcarousel {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .carousel-bg img {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .textcarousel h3 {
+        font-size: 3rem;
+    }
+
+    .textcarousel p {
+        font-size: 1.5rem;
+    }
+
+    .carousel-bg:nth-child(3) img {
+        opacity: 0.9;
+    }
+
+    .carousel-bg:nth-child(3) h3 {
+        color: rgb(255, 255, 255);
+    }
+
+    .carousel-bg:nth-child(3) p {
+        color: rgb(255, 255, 255);
+    }
+
+    .teamchild {
+        margin: 20px 0px 0 0px;
+    }
+
+    .teamchild h5 {
+        font-size: 1rem;
+    }
+
+    .card-footer {
+        padding: 0.1rem 1.25rem
+    }
 }
