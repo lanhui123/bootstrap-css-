@@ -12,14 +12,14 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </head>
-<body class="active-preloader-ovh">
+<body data-spy="scroll" data-offset="80" class="active-preloader-ovh">
 <!--<div class="preloader">
     <div class="spinner"></div>
 </div>-->
 
 <nav class="navbar  navbar-expand-sm navbar-dark  bg-dark fixed-top">
     <div class="container-fluid navfont">
-        <div class="col-sm-3 col-12 col-md-2 col-lg-1">
+        <div class=" col-12 col-sm-2   col-lg-2">
             <a class="navbar-brand" href="#haizei"><img src="img/lufei.jpg" width="58px"
                                                         class="d-inline-block align-top"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
@@ -27,45 +27,148 @@
                 <span class="fa fa-navicon"></span>
             </button>
         </div>
-        <div class="col-sm-7 col-md-8 col-lg-10">
+        <div class="col-12 col-sm-8  col-lg-8">
             <div class="collapse navbar-collapse ulli" id="navbarContent">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#about">Home</a>
+                        <a class="nav-link" href="#firstmodal">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">about</a>
+                        <a class="nav-link" href="#secondmodal">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">source</a>
+                        <a class="nav-link" href="#thirdmodal">source</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">content me</a>
+                        <a class="nav-link" href="#fourmodal">content me</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown" role="button"
+                        <button class="nav-link dropdown-toggle btn"  id="navbar-dropdown" role="button"
                            data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">our team</a>
+                           aria-haspopup="true" aria-expanded="false">our team</button>
                         <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                            <a class="dropdown-item" href="">1</a>
-                            <a class="dropdown-item" href="">2</a>
+                            <a class="dropdown-item" href="#ourteam">1</a>
+                            <a class="dropdown-item" data-toggle="modal" href="#labelled">2</a>
                             <p class="dropdown-divider"></p>
                             <a class="dropdown-item" href="#footcontent">3</a>
                         </div>
                     </li>
                     <li>
-                        <a class="block-menu" href="#">get Link</a>
+                        <a class="block-menu" data-toggle="modal" href="#mymodal">get Link</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="col-sm-2 col-md-2 col-lg-1 aflag">
-            <a class="" href="#"><span class="fa fa-flag-checkered"></span> </a>
-            <a class="" href="#"><span class="fa fa-gavel"></span> </a>
+        <div class="col-12 col-sm-2  col-lg-2  aflag">
+            <a class="" href="#mymodal"><span class="fa fa-flag-checkered"></span> </a>
+            <a class="" href="#mymodal"><span class="fa fa-gavel"></span> </a>
         </div>
     </div>
 </nav>
-<div class="container-fluid">
+<script type="text/javascript">
+    $(window).scroll(function () {
+        if ($(window).width() < 768) {
+            $("#navbarContent a").click(function () {
+                $("#navbarContent").collapse('hide');
+            })
+            /*点击后导航上拉*/
+            $(window).scroll(function () {
+                $("#navbarContent").collapse('hide');
+            })
+            /*屏幕上拉时，导航上拉隐藏*/
+        }
+    });
+    /*  $(window).scroll(function () {
+          if($(window).width() < 768){
+              $(".nav").offset().top();
+          }
+      })*/
+
+</script>
+
+<!--modal-->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="mymodal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Love story</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>you can close the modal</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---->
+<div class="modal fade" id="labelled" tabindex="-1" role="dialog" aria-labelledby="longmodal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="longmodal">没想到啊用高德我连一千块钱都比不上</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span class="fa fa-close"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>传说中海贼王哥尔·D·罗杰在死前说出他留下了具有财富、名声、力量的宝藏「ONE PIECE」，许多人为了争夺ONE PIECE，争相出海，许多海贼开始树立霸权，而形成了大海贼时代。十年后，草帽小子
+                    蒙其·D·鲁夫为了要实现与因救他而断臂的海贼 红发杰克的约定而出海，在遥远的路途上找寻著志同道合的夥伴，一起进入「伟大的航道」，目标当上海贼王。
+                    [编辑] 东海篇
+                    蒙卡篇（漫画：1－7话／动画：1－3话）
+                    受到海贼红发杰克的影响，草帽小子
+                    蒙其·D·鲁夫开始出海当海贼。不久，他遇到一只海怪和海贼亚尔丽塔，但是很快就击败了他们，然后认识了一个志向当上海军的男孩克比。其后他们来到海军蒙卡控制的城镇，在那里遇到因为攻击蒙卡儿子的狗而被抓起来的海贼猎人
+                    罗罗亚·索隆。
+                    巴其篇（漫画：8－21话／动画：4－8话）
+                    剑士 索隆成为鲁夫的第一个夥伴，他们来到海贼小丑 巴其控制的城镇，在那里遇见痛恨海贼的小偷娜美。
+                    克洛篇（漫画：22－41话／动画：9－18话）
+                    之后娜美作为他们的航海士与他们两人合作（不过她强调不是他们的夥伴），他们来到一座岛并寻找可以使用的船，在那里他们遇到了爱说谎话的骗人布。然而他们却发现骗人布的朋友可雅的管家克拉巴特尔（克洛船长）欲杀害可雅，鲁夫等打败了克洛后，可雅将黄金梅利号赠予他们。
+                    克利克篇（漫画：42－68话／动画：19－30话）
+                    狙击手 骗人布成为鲁夫的夥伴，一行人来到海上餐厅 巴拉蒂，希望能找一个厨师夥伴。但是餐厅却受到提督克利克的攻击，原来克利克从伟大航道回来后，船已破损不堪使用，他想要夺取巴拉蒂，再度返回伟大航道。
+                    恶龙篇（漫画：69－95话／动画：31－45话）
+                    来自巴拉蒂的厨师 香吉士加入草帽海贼团，但是娜美却偷了他们的船，他们尾随娜美，来到鱼人海贼
+                    恶龙所控制的岛屿。娜美坦承她是恶龙海贼团的一员，帮助鲁夫他们只是为了偷取黄金。但实际上，娜美是为了从恶龙手上买下她的村子而忍辱在恶龙麾下工作。后来，鲁夫打倒恶龙后，航海士
+                    娜美加入了草帽海贼团，正式成为他们的夥伴。
+                    罗格镇篇（漫画：96－100话／动画：48－53话）
+                    草帽海贼团一行人来到进入伟大航道之前的最后一个城镇罗格镇，那是海贼王 哥尔·D·罗杰的故乡，同时也是海贼王被处刑的地方，所以罗格镇又被称为开始与结束的城镇。在那里他们不仅得应付海军上校
+                    斯摩格，还要应付其他来寻仇的敌人，而鲁夫在那里受到其父亲蒙其·D·多拉格的帮助得以脱身（当时鲁夫并不知情）。
+                    [编辑] 巴洛克华克篇
+                    颠倒山篇（漫画：101－105话／动画：62－63话）
+                    草帽海贼团一行人来到伟大航道的大门双子岬，在那里遇到一只等待留下它去了伟大航道的夥伴布鲁克50年的岛屿鲸 拉布。
+                    威士忌山峰篇（漫画：106－114话／动画：64－67话）
+                    在神秘的Mr.8和Miss星期三的带领下，草帽一行人来到威士忌山峰，在那里市民举行派对欢迎他们的到来。但后来得悉威士忌山峰是巴洛克华克的地盘，并发现Miss星期三和Mr.8的真实身分其实是阿拉巴斯坦王国的公主和护卫队长。
+                    小花园篇（漫画：115－129话／动画：70－77话）
+                    鲁夫一行人来到小花园，那里是一个仍然保存著史前时代景观的巨大岛屿。但在那里有著比恐龙更加恐怖的东西，那就是已经在岛上决斗超过100年的两位巨人 — 青鬼 东利和赤鬼
+                    布洛基，众人更在此遇上了巴洛克华克的高级特务 Mr.3和Miss黄金周。(注:Mr.5和Miss情人节为了追杀草帽等人从威士忌山峰来到小花园与Mr.3搭档会合)
+                    磁鼓岛篇（漫画：130－154话／动画：78－91话／剧场版9）
+                    由於娜美得到一种不知名的病，使得全员必须前往磁鼓岛寻找医生。不巧的是，磁鼓岛因为先前统治者的关系，使得岛上只剩下一个医生，那就是住在山上城堡里的魔女
+                    Dr.古蕾娃，鲁夫和香吉士为此踏上征山之途。与此同时，前统治者瓦尔波刚好回到磁鼓岛来抢回他的国家。鲁夫等人并在此遇见了帮助他们治疗和与瓦尔波战斗的医生 多尼多尼·乔巴。
+                    阿拉巴斯坦篇（漫画：155－216话／动画：92－130话／剧场版8）
+                    乔巴以船医身份加入草帽海贼团，一行人和公主薇薇来到了阿拉巴斯坦平乱。虽然在他们赶到皇宫时，内战已经开始了，但最后的一场雨，使得薇薇可以向大家说明七武海之一 沙鳄鱼
+                    克洛克达尔的阴谋，内战亦随之结束。其后薇薇（和跑得快）向鲁夫等人道别，就算脱离了海贼团但仍是夥伴之一。接著，新成员考古学家 妮可·罗宾亦加入了草帽海贼团。
+                    [编辑] Sky Piea篇
+                    加亚篇（漫画：217－236话／动画：144－152话）
+                    由於纪录指针异常地指向天空，他们来到加亚岛寻找关於空岛的线索。
+                    空岛篇（漫画：237－302话／动画：153－195话）
+                    乘著巨大海流，一行人来到了积帝云上的「白白海」。他们发现天空的居民并不像表面上的那样和平，空岛原住民与香狄亚之间纷争不断，而「神
+                    艾涅尔」却打算将空岛打落蓝海。鲁夫击败艾涅尔后，敲响巨大的黄金钟，并解开了岛民与香狄亚两个种族的心结，也终结了历经战争四百年的故事。
+                    长环岛篇（漫画：303－321话／动画：207－226话）</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="firstmodal">
     <!-- <div class="row">-->
     <!--carousel-home-->
     <div class="carousel slide" data-ride="carousel" id="haizei">
@@ -81,7 +184,7 @@
                 <div class="carousel-caption">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-8 col-sm-5 col-md-6 textcarousel">
+                            <div class="col-12 col-sm-5 col-md-6 textcarousel">
                                 <h3>海贼王亦青春</h3>
                                 <p>Excepteur sint occaecat cupidatat non proident sunt in <br/> culpa qui officia
                                     deserunt
@@ -96,7 +199,7 @@
                 <div class="carousel-caption">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-8 col-sm-5 col-md-6 textcarousel">
+                            <div class="col-12 col-sm-5 col-md-6 textcarousel">
                                 <h3>路飞和艾斯一起</h3>
                                 <p>Excepteur sint occaecat cupidatat non proident sunt in <br/> culpa qui officia
                                     deserunt
@@ -107,13 +210,13 @@
                 </div>
             </div>
             <div class="carousel-item carousel-bg">
-                <img src="img/toggle1.jpg" alt="lost // picture" width="100%" >
+                <img src="img/toggle1.jpg" alt="lost // picture" width="100%">
                 <div class="carousel-caption">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-8 col-sm-5 col-md-6">
+                            <div class=" col-sm-5 col-md-6">
                             </div>
-                            <div class="col-8 col-sm-7 col-md-6 textcarousel">
+                            <div class="col-12 col-sm-7 col-md-6 textcarousel">
                                 <h3>岁月为空时光不留海贼情</h3>
                                 <p>Excepteur sint occaecat cupidatat non proident sunt in <br/> culpa qui officia
                                     deserunt
@@ -135,7 +238,7 @@
 
 <!---->
 <!-- latest news-->
-<div class="bgnews">
+<div class="bgnews" id="secondmodal">
     <div class="container" id="news">
         <div class="row">
             <div class="col-12 text-center titlefind">
@@ -204,25 +307,25 @@
 
 
 <!--about-->
-<div class="bgabout">
+<div class="bgabout" id="thirdmodal">
     <div class="second" id="about">
         <div class="container-fluid">
             <div class="row text-center">
-                <div class="col-sm-4 col-md-4 col-lg-4 right1 ">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 right1 ">
                     <img src="img/aisiliter.png" width="50%" height="50%">
-                    <h4>海贼王的大概</h4>
+                    <h4>海贼王喜欢</h4>
                     <p>Bitcoin is changing the way people <br/> think about money. Educate yourself <br/> about this
                         ground-breaking <br/> payment system.</p>
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                     <img src="img/lanbo.jpg" width="50%" height="50%">
-                    <h4>海贼王的大概</h4>
+                    <h4>开始履行</h4>
                     <p>Bitcoin is changing the way people <br/> think about money. Educate yourself <br/> about this
                         ground-breaking <br/> payment system.</p>
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                     <img src="img/lufeiliter.jpg" width="50%" height="50%">
-                    <h4>海贼王的大概</h4>
+                    <h4>结局还很久</h4>
                     <p>Bitcoin is changing the way people <br/> think about money. Educate yourself <br/> about this
                         ground-breaking <br/> payment system.</p>
                 </div>
@@ -233,7 +336,7 @@
 
 <!--source nav-tab-->
 
-<div class="bgnavtabs">
+<div class="bgnavtabs" id="fourmodal">
     <div class="container" id="navtabs">
         <div class="row">
             <div class="col-12">
@@ -330,78 +433,77 @@
                 <P class="text-center">Our inspired take on the classic </P>
                 <h2 class="text-center">our team bitcoin company as top</h2>
                 <span class="hr"></span>
-
-                <div class="row teamchild">
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="card">
-                            <!--<div class="card-header">
-                                <p class="text-center">波雅汉库克</p>
-                            </div>-->
-                            <div class="card-body">
-                                <img class="card-img-top" src="img/card1.png">
-                                <div class="padder">
-                                    <h5> &nbsp;&nbsp;<span class="fa fa-user"></span> :shanzhi</h5>
-                                    <h5> &nbsp;&nbsp;<i class="fa fa-phone"></i> :17746071111</h5>
-                                    <h5>&nbsp;&nbsp;<span class="fa fa-heart-o"></span> :但是输在一个大字上，只好委屈排第二</h5>
-                                </div>
-                            </div>
-                            <div class="card-footer text-center">
-                                <button type="button" class="btn bgchange"><a href="#">content me</a></button>
+            </div>
+            <div class="row teamchild">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <!--<div class="card-header">
+                            <p class="text-center">波雅汉库克</p>
+                        </div>-->
+                        <div class="card-body">
+                            <img class="card-img-top" src="img/card1.png">
+                            <div class="padder">
+                                <h5> &nbsp;&nbsp;<span class="fa fa-user"></span> :shanzhi</h5>
+                                <h5> &nbsp;&nbsp;<i class="fa fa-phone"></i> :17746071111</h5>
+                                <h5>&nbsp;&nbsp;<span class="fa fa-heart-o"></span> :但是输在一个大字上，只好委屈排第二</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="card">
-                            <!--<div class="card-header">
-                                <p class="text-center">波雅汉库克</p>
-                            </div>-->
-                            <div class="card-body">
-                                <img class="card-img-top" src="img/card3.png">
-                                <div class="padder">
-                                    <h5> &nbsp;&nbsp;<span class="fa fa-user"></span> :shanzhi</h5>
-                                    <h5> &nbsp;&nbsp;<i class="fa fa-phone"></i> :17746071111</h5>
-                                    <h5>&nbsp;&nbsp;<span class="fa fa-heart-o"></span> :但是输在一个大字上，只好委屈排第二</h5>
-                                </div>
-                            </div>
-                            <div class="card-footer text-center">
-                                <button type="button" class="btn bgchange"><a href="#">content me</a></button>
-                            </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn bgchange" data-toggle="modal" data-target="#labelled">content me</button>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="card">
-                            <!--<div class="card-header">
-                                <p class="text-center">波雅汉库克</p>
-                            </div>-->
-                            <div class="card-body">
-                                <img class="card-img-top" src="img/card2.png">
-                                <div class="padder">
-                                    <h5> &nbsp;&nbsp;<span class="fa fa-user"></span> :shanzhi</h5>
-                                    <h5> &nbsp;&nbsp;<i class="fa fa-phone"></i> :17746071111</h5>
-                                    <h5>&nbsp;&nbsp;<span class="fa fa-heart-o"></span> :但是输在一个大字上，只好委屈排第二</h5>
-                                </div>
-                            </div>
-                            <div class="card-footer text-center">
-                                <button type="button" class="btn bgchange"><a href="#">content me</a></button>
+                </div>
+                <div class="col-12 col-sm-6  col-lg-3">
+                    <div class="card">
+                        <!--<div class="card-header">
+                            <p class="text-center">波雅汉库克</p>
+                        </div>-->
+                        <div class="card-body">
+                            <img class="card-img-top" src="img/card3.png">
+                            <div class="padder">
+                                <h5> &nbsp;&nbsp;<span class="fa fa-user"></span> :shanzhi</h5>
+                                <h5> &nbsp;&nbsp;<i class="fa fa-phone"></i> :17746071111</h5>
+                                <h5>&nbsp;&nbsp;<span class="fa fa-heart-o"></span> :但是输在一个大字上，只好委屈排第二</h5>
                             </div>
                         </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn bgchange"><a href="#mymodal">content me</a></button>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="card">
-                            <!--<div class="card-header">
-                                <p class="text-center">波雅汉库克</p>
-                            </div>-->
-                            <div class="card-body">
-                                <img class="card-img-top" src="img/card4.png">
-                                <div class="padder">
-                                    <h5> &nbsp;&nbsp;<span class="fa fa-user"></span> :shanzhi</h5>
-                                    <h5> &nbsp;&nbsp;<i class="fa fa-phone"></i> :17746071111</h5>
-                                    <h5>&nbsp;&nbsp;<span class="fa fa-heart-o"></span> :但是输在一个大字上，只好委屈排第二</h5>
-                                </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <!--<div class="card-header">
+                            <p class="text-center">波雅汉库克</p>
+                        </div>-->
+                        <div class="card-body">
+                            <img class="card-img-top" src="img/card2.png">
+                            <div class="padder">
+                                <h5> &nbsp;&nbsp;<span class="fa fa-user"></span> :shanzhi</h5>
+                                <h5> &nbsp;&nbsp;<i class="fa fa-phone"></i> :17746071111</h5>
+                                <h5>&nbsp;&nbsp;<span class="fa fa-heart-o"></span> :但是输在一个大字上，只好委屈排第二</h5>
                             </div>
-                            <div class="card-footer text-center">
-                                <button type="button" class="btn bgchange"><a href="#">content me</a></button>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn bgchange"><a href="#mymodal">content me</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <!--<div class="card-header">
+                            <p class="text-center">波雅汉库克</p>
+                        </div>-->
+                        <div class="card-body">
+                            <img class="card-img-top" src="img/card4.png">
+                            <div class="padder">
+                                <h5> &nbsp;&nbsp;<span class="fa fa-user"></span> :shanzhi</h5>
+                                <h5> &nbsp;&nbsp;<i class="fa fa-phone"></i> :17746071111</h5>
+                                <h5>&nbsp;&nbsp;<span class="fa fa-heart-o"></span> :但是输在一个大字上，只好委屈排第二</h5>
                             </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn bgchange"><a href="#labelled" ><a href="#" class="disabled">content me</a></button>
                         </div>
                     </div>
                 </div>
@@ -458,8 +560,8 @@
     <!--footer-->
     <footer class="footertop">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center">
+            <div class="row text-center">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 ">
                     <div class=" firetfoot">
                         <h3>
                             关于
@@ -534,7 +636,24 @@
     </footer>
 </section>
 
+<script type="text/JavaScript">
+    $(document).ready(function () {
+        var $root = $('html, body');  //选择器缓存起来。这样每次点击时就不需要再重新查找了
+        $('a').click(function () {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+            return false;
+        });
+    });
 
+
+</script>
+
+<script src="js/scrolltopcontrol.js"></script>
 <script src="js/particles.min.js"></script>
 <script src="js/particles-config.js"></script>
 </body>

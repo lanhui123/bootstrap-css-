@@ -135,6 +135,16 @@ body .active-preloader-ovh {
 .ulli li:nth-child(6) {
     margin-left: 100px;
 }
+.ulli button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.ulli .dropdown button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
 
 .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
     color: #cc2222;
@@ -158,6 +168,7 @@ body .active-preloader-ovh {
 .navbar-dark.navbar-nav > a:hover {
     color: #34ce57;
 }
+
 
 .bgnews {
     background-color: #f6f5f1;
@@ -409,7 +420,7 @@ padding-right: 50px;
 
 .footertop ul {
     margin-top: 20px;
-    padding:  0;
+    padding: 0;
 }
 
 .footertop ul li {
@@ -446,6 +457,8 @@ padding-right: 50px;
     font-size: 1.1rem;
 }
 
+/*top*/
+
 @media screen and (max-width: 1024px) {
     /*nav导航修改*/
     .navbar {
@@ -469,6 +482,7 @@ padding-right: 50px;
     }
 
     .carousel-bg img {
+        position: relative;
         width: 100%;
         height: 400px;
         overflow: hidden;
@@ -498,6 +512,7 @@ padding-right: 50px;
         color: rgb(255, 255, 255);
     }
 
+    /*news img*/
     /*卡片修改*/
     .teamchild {
         margin: 20px 0px 0 0px;
@@ -524,9 +539,10 @@ padding-right: 50px;
         border-radius: 5px;
     }
 
-.fever{
-    padding: 0 30px ;
-}
+    .fever {
+        padding: 0 30px;
+    }
+
     .fever p {
         font-size: 1rem;
     }
@@ -534,6 +550,7 @@ padding-right: 50px;
     .fever h2 {
         font-size: 2.5rem;
     }
+
     /*tabs*/
     .bgnavtabs p {
         font-size: 1rem;
@@ -552,24 +569,129 @@ padding-right: 50px;
         margin: 7px 2px 8px 6px;
         font-size: 0.85rem;
     }
-    .footertop h3{
+
+    .footertop h3 {
         font-size: 1.1rem;
         font-weight: 700;
     }
-    .footertop ul li a{
+
+    .footertop ul li a {
         font-size: 1rem;
     }
-    .firetfoot ul li a{
+
+    .firetfoot ul li a {
         font-size: 0.8rem;
     }
+
     /*copyright*/
-    .contact-info{
+    .contact-info {
         font-size: 0.7rem;
     }
-    }
-@media screen and (max-device-width: 768px){
+}
+
+@media screen and (max-device-width: 768px) {
     /*nav*/
     .ulli li:nth-child(6) {
-        margin-left: 20px;
+        margin-left: 0px;
     }
+.ulli button{
+    font-size: 0.8rem;
+}
+    .textcarousel {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .textcarousel h3 {
+        font-size: 2rem;
+    }
+
+    .textcarousel p {
+        font-size: 1rem;
+    }
+
+    .bgabout img {
+        width: 80%;
+        height: 170px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .navfont {
+        font-size: 1.2rem;
+    }
+
+    .navfont span {
+        color: #ce5849;
+    }
+
+    .aflag span {
+        display: none;
+    }
+
+    .navfont button {
+        margin-top: 4px;
+        right: 30px;
+        position: absolute;
+    }
+
+    .carousel-bg img {
+        /*margin-top: 40px;*/
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    .textcarousel {
+        margin: 0;
+    }
+
+    .titlefind p {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .bgabout img {
+        width: 70%;
+        position: relative;
+        height: 200px;
+    }
+
+    .teamchild .btn {
+        padding: .375rem .75rem;
+    }
+
+}
+@media screen and (max-width: 414px){
+    .aflag span {
+        display: none;
+    }
+    .navfont {
+        font-size: 1.2rem;
+    }
+
+    .navfont span {
+        color: #ce5849;
+    }
+    .navfont button {
+        margin-top: 4px;
+         right: 30px;
+        position: absolute;
+    }
+
+    .bgabout img {
+        width: 60%;
+        position: relative;
+        height: 200px;
+    }
+    .teamchild .btn {
+        padding: .375rem .75rem;
+    }
+    .download h2{
+        text-align: center;
+        margin: 9px;
+    }
+
+
 }
