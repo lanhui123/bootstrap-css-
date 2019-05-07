@@ -112,13 +112,13 @@ body .active-preloader-ovh {
 }
 
 .block-menu {
-    background-image: linear-gradient(to right, #3de8a8 0%, #ecfa9a 51%, #e8293a 100%);
     border-radius: 30px;
-    background-size: 200% auto;
+    background-image: linear-gradient(to right, #f1131d 0%, #5c6910 51%, #e8293a 100%);
+    background-size: 1% auto;
     border-style: none;
     color: #fff;
     font-weight: 700;
-    padding: 6px 22px !important;
+    padding: 5px 14px !important;
     transition: 0.5s;
     text-transform: capitalize;
     z-index: 1;
@@ -474,6 +474,10 @@ padding-right: 50px;
         width: 50px;
         height: 30px;
     }
+    .ulli li:nth-child(6){
+        margin-top: 4px;
+    }
+
 
     /*轮播图修改*/
     .textcarousel {

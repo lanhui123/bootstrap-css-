@@ -43,9 +43,9 @@
                         <a class="nav-link" href="#fourmodal">content me</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <button class="nav-link dropdown-toggle btn"  id="navbar-dropdown" role="button"
+                        <a class="nav-link dropdown-toggle" id="navbar-dropdown" role="button"
                            data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">our team</button>
+                           aria-haspopup="true" aria-expanded="false">our team</a>
                         <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
                             <a class="dropdown-item" href="#ourteam">1</a>
                             <a class="dropdown-item" data-toggle="modal" href="#labelled">2</a>
@@ -449,7 +449,9 @@
                             </div>
                         </div>
                         <div class="card-footer text-center">
-                            <button type="button" class="btn bgchange" data-toggle="modal" data-target="#labelled">content me</button>
+                            <button type="button" class="btn bgchange" data-toggle="modal" data-target="#labelled">
+                                content me
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -503,7 +505,8 @@
                             </div>
                         </div>
                         <div class="card-footer text-center">
-                            <button type="button" class="btn bgchange"><a href="#labelled" ><a href="#" class="disabled">content me</a></button>
+                            <button type="button" class="btn bgchange"><a href="#" class="disabled">content
+                                me</a></button>
                         </div>
                     </div>
                 </div>
@@ -636,7 +639,7 @@
     </footer>
 </section>
 
-<script type="text/JavaScript">
+<!--<script type="text/JavaScript">
     $(document).ready(function () {
         var $root = $('html, body');  //选择器缓存起来。这样每次点击时就不需要再重新查找了
         $('a').click(function () {
@@ -651,10 +654,35 @@
     });
 
 
+</script>-->
+<script type="text/javascript">
+    $(function () {
+//锚点跳转滑动效果
+        $('b').click(function () {
+            console.log(this.pathname)
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                if ($target.length) {
+                    var targetOffset = $target.offset().top;
+                    $('html,body').animate({
+                            scrollTop: targetOffset
+                        },
+                        1000);
+                    return false;
+                }
+            }
+        });
+    })
+var pos = $("#firstmodal").offset().top;
+// 实现平滑移动 1000代表时间ms
+$("html,body").animate({scrollTop: pos}, 1000);
 </script>
 
-<script src="js/scrolltopcontrol.js"></script>
-<script src="js/particles.min.js"></script>
-<script src="js/particles-config.js"></script>
+
+<script src="js/scrolltopcontrol.js"></script><!--top-->
+<script src="js/particles.min.js"></script><!--green lizi-->
+<script src="js/particles-config.js"></script><!--lizi config-->
+<script src="js/jquery.easing.min.js"></script>
 </body>
 </html>
