@@ -1,6 +1,6 @@
 var scrolltotop = {
     setting: {startline: 100, scrollto: 0, scrollduration: 1000, fadeduration: [500, 100]},
-    controlHTML: '<i class="fa fa-arrow-up scrolltop"></i>',
+    controlHTML: '<i class="fa fa-arrow-circle-o-up scrolltop"></i>',
     controlattrs: {offsetx: 5, offsety: 5},
     anchorkeyword: "#top",
     state: {isvisible: false, shouldvisible: false},

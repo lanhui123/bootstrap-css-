@@ -258,7 +258,7 @@ padding-right: 50px;
     margin-top: 30px;
     max-width: 100%;
     border-radius: 25px;
-    box-shadow: 0 0 6px 3px rgba(37, 66, 37, 0.5);
+    box-shadow: 0 0 6px 3px rgba(26, 30, 53, 0.5);
 }
 
 .bgnavtabs {
@@ -458,6 +458,38 @@ padding-right: 50px;
 }
 
 /*top*/
+
+/*fa-arrow-up:before {
+    content: "\f062";
+    color: #6f9ace;
+    font-size: 40px;
+
+}*/
+.topcontrol {
+    height: 50px;
+    width: 50px;
+    background: #1aa5d4 none repeat scroll 0 0;
+    position: fixed;
+    border-radius: 30px;
+    bottom: 5px;
+    right: 5px;
+    box-shadow: 0 5px 40px 0 rgba(42, 111, 199, 0.2);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 50px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.topcontrol:hover{
+    font-size: 30px;
+    transform: rotateZ(360deg);
+    color: rgb(37, 250, 53);
+    background:  rgba(186, 199, 206, 0.01) no-repeat scroll 0 0;
+}
 
 @media screen and (max-width: 1024px) {
     /*nav导航修改*/
